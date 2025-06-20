@@ -5,7 +5,7 @@ site:
   description: Null
   keywords: gitsite, git, static web site, html
   theme: default
-  language: zh-CN
+  language: en-US
   # set the /<rootPath> pathname under which your site is served
   # for GitHub pages deployment without a custom domain, it is often '/<projectName>'
   root-path: /sinny_awesome
@@ -19,14 +19,14 @@ site:
     - title: License
       uri: /sinny_awesome/pages/license/index.html
     - title: Discuss
-      uri: 0
+      uri: https://github.com/sinnylang
       external: true
   git:
     base-url: https://github.com/michaelliao/gitsite/blob/main/source
   contact:
     name: Sinny Lang
     github: https://github.com/sinnylang
-    twitter: 0
+    twitter: https://github.com/sinnylang
   books:
     index-marker: true
   search:
