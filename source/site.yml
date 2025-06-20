@@ -13,11 +13,11 @@ site:
   cdn-path: https://cdn.jsdelivr.net/npm
   navigation:
     - title: User Guide
-      uri: /sinny_awesome/books/gitsite-guide/index.html
+      uri: /books/gitsite-guide/index.html
     - title: Blogs
-      uri: /sinny_awesome/blogs/tech/index.html
+      uri: /blogs/tech/index.html
     - title: License
-      uri: /sinny_awesome/pages/license/index.html
+      uri: /pages/license/index.html
     - title: Discuss
       uri: https://github.com/sinnylang
       external: true
