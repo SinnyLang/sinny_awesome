@@ -19,7 +19,7 @@ site:
     - title: License
       uri: /pages/license/index.html
     - title: Discuss
-      uri: https://github.com/michaelliao/gitsite/discussions
+      uri: https://github.com/SinnyLang
       external: true
   git:
     base-url: https://github.com/michaelliao/gitsite/blob/main/source
