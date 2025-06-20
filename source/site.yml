@@ -2,7 +2,7 @@ site:
   # set the domain with schema but without trailing slash:
   domain: 'https://gitsite.org'
   title: SL Pages
-  description: GitSite is a static web site generator for Git.
+  description: 苦 躺 愧 干
   keywords: gitsite, git, static web site, html
   theme: default
   language: en-US
@@ -24,9 +24,9 @@ site:
   git:
     base-url: https://github.com/michaelliao/gitsite/blob/main/source
   contact:
-    name: Michael Liao
-    github: https://github.com/michaelliao/gitsite
-    twitter: https://twitter.com/liaoxuefeng
+    name: Sinny Lang
+    github: https://github.com/SinnyLang
+    twitter: https://github.com/SinnyLang
   books:
     index-marker: true
   search:
