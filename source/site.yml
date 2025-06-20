@@ -14,6 +14,8 @@ site:
   navigation:
     - title: User Guide
       uri: /books/gitsite-guide/index.html
+    - title: JVM总结
+      uri: /books/jvm-book/index.html
     - title: Blogs
       uri: /blogs/tech/index.html
     - title: License
