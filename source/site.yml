@@ -1,8 +1,8 @@
 site:
   # set the domain with schema but without trailing slash:
   domain: 'https://gitsite.org'
-  title: SL Pages
-  description: Null
+  title: GitSite
+  description: GitSite is a static web site generator for Git.
   keywords: gitsite, git, static web site, html
   theme: default
   language: en-US
@@ -19,14 +19,14 @@ site:
     - title: License
       uri: /pages/license/index.html
     - title: Discuss
-      uri: https://github.com/sinnylang
+      uri: https://github.com/michaelliao/gitsite/discussions
       external: true
   git:
     base-url: https://github.com/michaelliao/gitsite/blob/main/source
   contact:
-    name: Sinny Lang
-    github: https://github.com/sinnylang
-    twitter: https://github.com/sinnylang
+    name: Michael Liao
+    github: https://github.com/michaelliao/gitsite
+    twitter: https://twitter.com/liaoxuefeng
   books:
     index-marker: true
   search:
