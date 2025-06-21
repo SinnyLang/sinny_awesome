@@ -20,7 +20,7 @@ V:v2 bass
 [V:v2][|E,B,EF G4|F,CFG A4 |G,DGA B4 | [G,8DG] |]
 ```
 
-```abcjs max-width=640
+```abcjs max-width=640 align=center controls
 X:1
 T:Flower Dance
 T:DJ Okawari
