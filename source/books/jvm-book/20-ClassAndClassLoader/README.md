@@ -1,4 +1,4 @@
-# 类的加载和类的加载器ClassLoader
+# 类和类的加载器ClassLoader
 
 ## 类的生命周期
 

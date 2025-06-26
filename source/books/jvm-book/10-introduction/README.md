@@ -6,7 +6,7 @@ JVM由**类加载器、运行时数据区（JVM内存）、执行引擎和本地
 
 ![Jvm construction](Jvm-construction.png)
 
-**类加载器**：负责将class文件加载到JVM内存。**JVM内存**存储了所有class对象以及进程的上下文信息。**执行引擎**包括即时编译器、解释器、垃圾回收器等。**本地接口**调用本地已经编译的方法，比如虚拟机中提供的C/C++的方法。
+**类加载器**：负责将class文件加载到JVM内存。**JVM内存**负责管理JVM使用到的内存，比如创建对象、销毁对象。**执行引擎**将字节码文件中的指令解释称机器码，同时使用即使编译优化性能，包括即时编译器、解释器、垃圾回收器等。**本地接口**调用本地已经编译的方法，比如虚拟机中提供的C/C++的方法。
 
 更多JVM结构规范可以在[JVM手册](https://docs.oracle.com/javase/specs/index.html)找到详细介绍。
 
@@ -22,7 +22,7 @@ JVM由**类加载器、运行时数据区（JVM内存）、执行引擎和本地
 
  如下面图片所示，常量14记录了`test2`方法的类名（`xyz/sl/Main`）、名字（`test2`）、参数列表（`()`）和返回值（`I`）。`Methodref_info`常量并不直接记录这些字符串，而是记录这些字符串的引用 **cp info #2** 和 **cp info #59** 。
  
->注意：**cp info #2** 和 **cp info #59** 也并非字符串引用，实际上是fen'bie指向`Class_info`和`NameAndType_info`。同`Methodref_info`一样，它们内部也是**cp  info \#xx**，但最终这些引用指向字符串常量`Utf8_info`。
+>注意：**cp info #2** 和 **cp info #59** 也并非字符串引用，实际上是分别指向`Class_info`和`NameAndType_info`。同`Methodref_info`一样，它们内部也是**cp  info \#xx**，但最终这些引用指向字符串常量`Utf8_info`。
 
 ```alert type=note
 字符串记录信息的格式同安卓smali大同小异，每个信息常量分解方法也同dexlib2工具相似。
