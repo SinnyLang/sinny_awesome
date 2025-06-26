@@ -192,10 +192,11 @@ public final boolean usbStatus(Context mContext) {
 接下来是娱乐时间。
 
 当绕过不成功时会出现图示警告。
-![adb-warning.png](adb-warning.png width="150px")
+
+<img src="adb-warning.png" alt="adb-warning" width="200px">
 
 我这里仅仅使用了AutoJsX，所以需要考虑绕过无障碍检测部分。既然是字符串检测，我就修改包名和应用名就好了。最终结果也证明了我的方案是正确的，但是就在我欣喜之际……
 
-![id-error.png](id-error.png width="150px")
+<img src="id-error.png" alt="id-error" width="200px">
 
 ![silly](emoji-silly.png)

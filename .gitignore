@@ -389,3 +389,12 @@ _site_*/
 
 !.gitignore
 !.gitsubmodules
+
+#### obsidian dir ####
+.obsidian
+
+#### verysync dir ####
+.verysync
+
+#### idea dir ####
+.idea
