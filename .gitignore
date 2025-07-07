@@ -399,3 +399,6 @@ _site_*/
 
 #### idea dir ####
 .idea
+
+### android No Media ###
+.nomedia
