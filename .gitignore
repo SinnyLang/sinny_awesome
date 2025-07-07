@@ -395,6 +395,7 @@ _site_*/
 
 #### verysync dir ####
 .verysync
+.trash
 
 #### idea dir ####
 .idea
