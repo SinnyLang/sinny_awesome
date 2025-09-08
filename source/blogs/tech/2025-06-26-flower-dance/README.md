@@ -23,10 +23,12 @@ V:v2 bass
 |d2z/2G/2B/2d/2 [c2AF] {Ac}[A2cf]|[A3/2c]a/2 g3/2=g/2 ^g2 d'2|g2 {g}[g2d'2] c'(3c'/2d'/2c'/2 af|g6 zd|
 |{GB}[G2Bd]z/2 G/2B/2d/2 [F2Ac] [A2cf]|[Ac][A=g][A^g][Aa] d/2b/2c/2a/2 B/2g/2A/2f/2|g/2d'/2c'/2d'/2 g/2d'/2c'/2d'/2 g/2d'/2c'/2d'/2 g/2d'/2c'/2d'/2|
 |g/d'/^b/d'/ g/d'/b/d'/ g/d'/^b/d'/ g/d'/b/d'/|b/d/a/d/ b/d/c'/d/ a/A/g/A/ fd/f/|
+|g/B/f/B/ g/B/b/B/ f/B/e/B/ dd/f/|e/G/d/G/ c/G/e/G/ d/D/c/D/ B/D/d/D/|
 [V:v2]
 |zB,2 zF,CF2|D,A,DA, G,DGD|E,B,EB, F,CFC |G,DGABD G2|
 |E,B,E2 F,CF2|D,A,D2 G,DG2|E,B,E2 F,CF|
 |G,DGA ^B[GG,][DD,][G,G,,]|[G,G,,]B,/A,/ C/B,/A,/B,/ D,[DA,F,] [DA,F,]2|
+|[E,E,,]G,/F,/ G,/A,/B,/G,/ B,,[D,F,B,] [D,F,B,]2 |[C,C,,]E/D/ C/B,/A, [B,,B,,,]D,/C,/ B,,/A,,/G,,/F,,/|
 ```
 
 ```abcjs max-width=640 align=center controls
