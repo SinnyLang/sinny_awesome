@@ -1,10 +1,10 @@
 # This workflow sync the current github repo to a remote repo by using 'git push'.
 on:
-#  push:
-#    branches: ["main"]
-#  pull_request:
-#    branches: ["main"]
-#
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
 #  workflow_dispatch:
 
 jobs:
