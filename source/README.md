@@ -1,4 +1,6 @@
 # Home
+---
+![android-compile](android-compile.png)
 
 # Rapidly build modern websites from Markdown documents in Git
 
