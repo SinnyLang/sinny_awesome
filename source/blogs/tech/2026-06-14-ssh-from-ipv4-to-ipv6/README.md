@@ -54,7 +54,7 @@
    - **代理状态**：必须开启 **橙色云朵（Proxied）**，这样流量才会经过 Cloudflare。
 3. 等待 DNS 解析生效（通常 1~5 分钟）。
 
-![[Cloudflare-proxyYourDomain.png]]
+![Cloudflare-proxyYourDomain.png](Cloudflare-proxyYourDomain.png)
 
 > 此步骤可以参考其它博客进行配置，显示橙色云朵即可。
 
@@ -69,7 +69,7 @@
    - **Origin Certificate**（`cert.pem`）
    - **Private Key**（`key.pem`）
 
-![[Cloudflare-genOriginServerCert.png]]
+![Cloudflare-genOriginServerCert.png](Cloudflare-genOriginServerCert.png)
 
    > 注意：私钥仅在此时可见，关闭窗口后私钥无法再次复制，请妥善保存。我这里添加了两个域名，通常一个即可，或者使用通配符 `*.xxx.com`。
 
@@ -78,7 +78,7 @@
 进入 **SSL/TLS** → **Overview**，将加密模式设置为 **Full (strict)**。  
 这要求源站必须提供有效的 TLS 证书（即你刚刚生成并安装的 Origin Certificate），且 Cloudflare 会严格验证。
 
-![[Cloudflare-setSslTlsEncrypt.png]]
+![Cloudflare-setSslTlsEncrypt.png](Cloudflare-setSslTlsEncrypt.png)
 
 ### 3.4 确认端口支持
 
@@ -98,7 +98,7 @@ Cloudflare 代理仅允许特定端口，建议使用 **HTTPS 端口** 中的 `2
 apt update && apt install websockify -y
 ```
 
-![[Websockify-usage.png]]
+![Websockify-usage.png](Websockify-usage.png)
 
 ### 4.2 放置 TLS 证书
 
@@ -121,13 +121,13 @@ chmod 644 /etc/websockify/ssl/cert.pem
 chmod 640 /etc/websockify/ssl/key.pem
 ```
 
-![[Websockify-setSslCertPermission.png]]
+![Websockify-setSslCertPermission.png](Websockify-setSslCertPermission.png)
 
 ### 4.3 创建 systemd 服务
 
 编辑 `/etc/systemd/system/websockify.service`：
 
-![[Websockify-createLinuxSystemService.png]]
+![Websockify-createLinuxSystemService.png](Websockify-createLinuxSystemService.png)
 
 - `[::]:2053`：监听所有 IPv6 接口。
 - `[::1]:22`：转发到本地 SSH 端口（确保 SSH 服务在监听）。
@@ -141,7 +141,7 @@ mkdir -p /var/log/websockify
 chown websockify:websockify /var/log/websockify
 ```
 
-![[Websockify-configureLogDirectoryPermission.png]]
+![Websockify-configureLogDirectoryPermission.png](Websockify-configureLogDirectoryPermission.png)
 
 重载、启用并启动：
 
@@ -152,7 +152,7 @@ systemctl start websockify
 systemctl status websockify
 ```
 
-![[Websockify-showServiceStatus.png]]
+![Websockify-showServiceStatus.png](Websockify-showServiceStatus.png)
 
 ### 4.4 防火墙及安全加固（推荐）
 
@@ -197,7 +197,7 @@ websocat --binary tcp-listen:127.0.0.1:2253 wss://xxx.xxx.site:2053
 - `tcp-listen:127.0.0.1:2253`：在本地监听 `2253` 端口，监听本地的哪个端口随便选。
 - `wss://xxx.xxx.site:2053`：域名被托管后，访问域名的 2053 端口，流量会被转发到服务器的 2053端口。
 
-![[Websocat-listeningPort.png]]
+![Websocat-listeningPort.png](Websocat-listeningPort.png)
 
 保持该窗口运行。
 
@@ -211,7 +211,7 @@ ssh -p 2253 用户名@127.0.0.1
 
 输入密码或密钥后即可登录服务器。
 
-![[SSH-SuccessfulConnection.png]]
+![SSH-SuccessfulConnection.png](SSH-SuccessfulConnection.png)
 
 ---
 
